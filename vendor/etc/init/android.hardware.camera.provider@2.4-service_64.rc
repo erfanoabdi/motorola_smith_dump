@@ -1,0 +1,10 @@
+#! /bin/sh
+#
+#Copyright (c) 2019 Qualcomm Technologies, Inc.
+#All Rights Reserved.
+#Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+
+service vendor.camera-provider-2-4 /vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
+    override
+    disabled

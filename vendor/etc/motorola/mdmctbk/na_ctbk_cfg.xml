@@ -1,0 +1,29 @@
+<xml>
+    <ctbk_version>100</ctbk_version>
+    <wifi_tx_pwr_mimo>
+          <!-- (10 plimit)2.4G tx0,2.4G tx1,5G TX0_B1,5G TX0_B2,5G TX0_B3,5G TX0_B4,,5G TX1_B1,5G TX1_B2,5G TX1_B3,5G TX1_B4-->
+        <Default  index="0">40,40,38,38,38,38,38,38,38,38</Default> <!--default, Max-->
+        <State1   index="1">40,40,38,38,38,38,38,38,38,38</State1>  <!--WLAN + WWAN, No Sensor Triggered-->
+        <State2   index="2">17,17,18,17,15,18,18,17,15,18</State2>  <!--HotSpot, Not on Body, Not next to Head-->
+        <State3   index="3">17,17,18,17,15,18,18,17,15,18</State3>  <!--WLAN, Min Power, Max CB-->
+        <State4   index="4">40,40,38,38,38,38,38,38,38,38</State4>  <!--WLAN StandAlone, Next to Head, Earpiece On-->
+        <State5   index="5">40,40,38,38,38,38,38,38,38,38</State5>  <!--WLAN + WWAN, Next to Head, Earpiece On-->
+        <State6   index="6">28,28,29,28,26,29,29,28,26,29</State6>  <!--WLAN StandAlone, On Body)-->
+        <State7   index="7">17,17,18,17,15,18,18,17,15,18</State7>  <!--WLAN + WWAN, On Body-->
+        <State8   index="8">22,22,22,21,20,20,22,21,20,20</State8>  <!--WLAN + WWAN, TX0_WLAN triggered Extremity-->
+        <State9   index="9">35,35,35,34,33,33,35,34,33,33</State9>  <!--WLAN StandAlone, TX0_WLAN triggered Extremity-->
+        <State10   index="10">44,44,44,44,44,44,44,44,44,44</State10> <!-- ? -->
+    </wifi_tx_pwr_mimo>
+    <sar_sensors>
+        <sensor type="prox_front"           index="0">Composite Proximity Sensor Wakeup</sensor>
+        <sensor type="prox_back"            index="1">TMD2725 Alt Proximity Sensor Wakeup</sensor>
+        <!--from back view-->
+        <sensor type="cap_top_right"        index="2">Moto CapSense Ch0</sensor>
+        <sensor type="cap_bottom_right"     index="3">Moto CapSense Ch2</sensor>
+        <sensor type="cap_bottom_left"      index="4">Moto CapSense Ch3</sensor>
+        <sensor type="cap_top_left"         index="5">Moto CapSense Ch4</sensor>
+        <sensor type="flip sensor"          index="6">Flip Position  Wakeup</sensor>
+    </sar_sensors>
+    <!--OB5 config: 5 = 0000101b (cap_bottom_center|cap_top)-->
+    <ob5_sensor_config>5</ob5_sensor_config>
+</xml>
