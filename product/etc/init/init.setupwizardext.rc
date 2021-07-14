@@ -1,0 +1,3 @@
+on boot
+    # Enable Decision Point screen during setup flow
+    setprop setupwizard.feature.baseline_setupwizard_enabled true
